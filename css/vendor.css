@@ -6,6 +6,31 @@
 /*--------------------------------------------------------------
 /** Jarallax
 --------------------------------------------------------------*/
+
+.background-photo{
+  height: 30rem;
+  background-position: center bottom;
+  
+  background-size: cover;
+  background-image: url("../src/img/background3-2.jpg");
+  background-repeat: no-repeat;
+}
+
+.imgSize1{
+  max-height: 15rem;
+  width: cover;
+}
+
+.imgSize2{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover; 
+}
+
+.position-center{
+  justify-content: center;
+}
+
 .jarallax {
   position: relative;
   z-index: 0;
