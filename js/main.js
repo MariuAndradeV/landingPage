@@ -29,7 +29,7 @@
         return response.json(); // Procesa la respuesta como JSON
       })
       .then(result => {
-        alert('Agradecemos tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces');
+        alert('Gracias por tu interés. Recibirás más información en tu correo. Tus datos fueron guardados con éxito.');
         form.reset(); // Resetea el formulario después de enviar
       })
       .catch(error => {
@@ -39,40 +39,7 @@
     });
 });
 
-let sendData = () => {  
-     // Obtén los datos del formulario
-     const formData = new FormData(form);
-     const data = Object.fromEntries(formData.entries()); // Convierte FormData a objeto
 
-     // new Date().toLocaleString( locales, options )
-     data['saved'] = new Date().toLocaleString('es-CO', { timeZone: 'America/Guayaquil' })
-
-     // Realiza la petición POST con fetch
-    fetch(databaseURL, {
-        method: 'POST', // Método de la solicitud
-        headers: {
-            'Content-Type': 'application/json' // Especifica que los datos están en formato JSON
-        },
-        body: JSON.stringify(data) // Convierte los datos a JSON
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`Error en la solicitud: ${response.statusText}`);
-        }
-        return response.json(); // Procesa la respuesta como JSON
-    })
-    then(result => {
-        alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
-        form.reset()
-
-        // Recuperación de datos
-        getData()
-    })
-
-    .catch(error => {
-        alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
-    });
-}
 
 
   let getData = async () => {  
