@@ -7,12 +7,18 @@
 /** Jarallax
 --------------------------------------------------------------*/
 
+/** YO */
+
+.navbar{
+  background-color: #BF6F41;
+}
+
 .background-photo{
   height: 30rem;
   background-position: center bottom;
   
   background-size: cover;
-  background-image: url("../src/img/background3-2.jpg");
+  background-image: url("../src/img/background3.jpg");
   background-repeat: no-repeat;
 }
 
@@ -30,6 +36,18 @@
 .position-center{
   justify-content: center;
 }
+
+/** formulario */
+.newsletter{
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url(../src/img/fondo.png);
+
+  background-size: contain; /* Ajusta la imagen al contenedor */
+  background-position: center;
+  filter: grayscale(50%); 
+}
+
+/** original*/
 
 .jarallax {
   position: relative;

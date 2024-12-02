@@ -234,8 +234,15 @@ a {
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-body-padding-y: 0.1rem;
-  --bs-accordion-active-color: transparent;
+  --bs-accordion-active-color: RED;
   --bs-accordion-active-bg: transparent;
+}
+
+.accordion-item{
+  background-color: #ced9ff;
+  padding: 0.1rem 0.8rem 2rem 0.8rem;
+  margin: 1rem;
+  border-radius: 1rem !important;
 }
 
 /* form control */
@@ -794,12 +801,11 @@ a {
   position: absolute;
   top: 50%;
   font-size: 2em;
-  color: var(--dark-color);
+  color: black;
   z-index: 8;
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 1px solid #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -808,23 +814,26 @@ a {
   transition: opacity 0.3s ease-out;
 }
 
+.text-black{
+  color: rgb(70, 64, 64) !important;
+}
+.negrita{
+  font-weight: bold;
+}
+
 .icon-arrow:hover {
-  opacity: 1;
+  opacity: 2;
 }
 
 .icon-arrow.icon-arrow-left {
-  left: 30px;
+  left: 20px;
 }
 
 .icon-arrow.icon-arrow-right {
-  right: 30px;
+  right: 20px;
 }
 
 @media (max-width: 991px) {
-  .icon-arrow.icon-arrow-left,
-  .icon-arrow.icon-arrow-right {
-    display: none;
-  }
   .swiper-pagination {
     position: relative;
   }
@@ -1506,7 +1515,9 @@ a.btn-link.text-light:after {
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-body-padding-y: 0;
   --bs-accordion-active-color: #8C907E;
+  --bs-accordion-border-color:red !important;
 }
+
 
 .product-filter .accordion-body>div,
 .product-filter .accordion-body a {
@@ -1514,10 +1525,14 @@ a.btn-link.text-light:after {
   padding: 10px;
   margin-bottom: 1.25rem;
   border: 1px solid #EBEBEA;
+  
 }
+
 
 .product-filter .accordion-body a:hover {
   border: 1px solid #999;
+  
+  
 }
 
 /* image zoom */
