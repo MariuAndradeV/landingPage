@@ -234,12 +234,16 @@ a {
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-body-padding-y: 0.1rem;
-  --bs-accordion-active-color: RED;
+  --bs-accordion-active-color: #F96E2A;
   --bs-accordion-active-bg: transparent;
 }
 
+.collection{
+  background-color: #78B3CE;
+}
+
 .accordion-item{
-  background-color: #ced9ff;
+  background-color: #C9E6F0;
   padding: 0.1rem 0.8rem 2rem 0.8rem;
   margin: 1rem;
   border-radius: 1rem !important;
@@ -819,6 +823,14 @@ a {
 }
 .negrita{
   font-weight: bold;
+}
+
+.gap{
+  margin-bottom: 1rem;
+}
+
+.margin{
+  padding: 3rem;
 }
 
 .icon-arrow:hover {
